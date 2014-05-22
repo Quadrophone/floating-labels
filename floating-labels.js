@@ -7,12 +7,12 @@
             var inputHeight = parseInt($(this).css('padding-top'));
             var labelSize = inputHeight / 1.1;
             var inputPadding = parseFloat($(this).css('padding-left'));
-            var inputPosition = $(this).position();
+            var inputPosition = $(this).offset();
             var labelLeft = inputPosition.left + inputPadding;
             if ($(this).is('textarea')) {
-                var labelTop = inputPosition.top * 1.06
+                var labelTop = inputPosition.top * 1.015;
             } else {
-                var labelTop = inputPosition.top * 1.03;
+                var labelTop = inputPosition.top * 1.01;
             }
             $(this).prev('.floating-label').css({
                 'font-size': labelSize + 'px',
