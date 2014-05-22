@@ -7,9 +7,10 @@
       var inputHeight = parseInt($(this).css('padding-top'));
       var labelSize = inputHeight / 1.1;
       var inputPadding = parseFloat($(this).css('padding-left'));
-      var inputPosition = $(this).position();
-      var labelLeft = inputPosition.left + inputPadding;
-      var labelTop = inputPosition.top + (fontSize / 1.05);
+      var inputTop = $(this).position();
+      var inputLeft = $(this).offset(); // fix for Chrome
+      var labelLeft = inputLeft.left + inputPadding;
+      var labelTop = inputTop.top + (fontSize / 1.05);
       $(this).prev('.floating-label').css({
         'font-size': labelSize + 'px',
         'left': labelLeft + 'px',
@@ -26,10 +27,11 @@
     $(window).resize(function(){
       $('.floating').each(function() {
         var fontSize = parseInt($(this).css('font-size'));
-        var inputPosition = $(this).position();
+        var inputTop = $(this).position();
+        var inputLeft = $(this).offset(); // fix for Chrome
         var inputPadding = parseFloat($(this).css('padding-left'));
-        var labelLeft = inputPosition.left + inputPadding;
-        var labelTop = inputPosition.top + (fontSize / 1.05);
+        var labelLeft = inputLeft.left + inputPadding;
+        var labelTop = inputTop.top + (fontSize / 1.05);
         $(this).prev('.floating-label').css({     
           'left': labelLeft + 'px',
           'top': labelTop + 'px'
