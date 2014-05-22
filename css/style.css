@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Oxygen|Droid+Sans+Mono);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #fff;
+  line-height: 1.4em;
+  font-family: 'Oxygen', 'Helvetica Neue', 'Arial', 'sans-serif'; }
+
+h1 {
+  margin: 1em auto;
+  color: #555;
+  font-size: 2em; }
+
+h3 {
+  color: #555;
+  font-size: 1.5em;
+  line-height: 1.6em; }
+
+.floating {
+  position: relative;
+  z-index: 99;
+  padding: 12px; }
+
+.floating-label {
+  position: absolute;
+  z-index: 999;
+  color: #666; }
+
+textarea {
+  resize: none; }
+
+#floaty {
+  background-color: #2C4D5E;
+  border-radius: 3px;
+  width: 40%;
+  margin: 0 auto 2em;
+  padding: 1em 0;
+  min-width: 320px; }
+  #floaty input, #floaty textarea {
+    font-family: 'Helvetica';
+    color: #444;
+    width: 90%;
+    margin: 1em auto;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    font-size: 2em; }
+
+.instructions {
+  width: 65%;
+  margin: 0 auto;
+  min-width: 320px;
+  padding: 1em;
+  text-align: center; }
+  @media screen and (max-width: 375px) {
+    .instructions {
+      margin: 0; } }
+
+.codeblock {
+  text-align: left;
+  margin: 1em auto;
+  background-color: #444;
+  color: #fff;
+  padding: 1em;
+  max-width: 560px;
+  min-width: 300px; }
+
+code {
+  font-family: 'Droid Sans Mono', monospace;
+  line-height: 1.25em; }
+
+footer {
+  margin-bottom: 2em;
+  text-align: center; }
+  footer a, footer a:visited {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #1BBC9B; }
+
+.green {
+  color: green; }
+
+.blue {
+  color: blue; }
+
+.purple {
+  color: purple; }

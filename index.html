@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta property="og:image" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:type" content=""/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/prefix-free.js"></script>
+</head>
+<body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <![endif]-->
+
+            <div class="instructions">
+               <h1>jQuery Floating Labels</h1>
+               <h3>Include the script and jQuery on your page, then add the "floating" class to any input or textarea element. Set the "placeholder" attribute to whatever you want to appear in the floating label.</h3>
+               <div class="codeblock">
+                <code>&lt;input type="text" class="floating" placeholder="Name"&gt;</code>
+            </div>
+            <h3>Add this to your CSS:</h3>
+            <div class="codeblock">
+                <code>
+                 .floating {<br>
+                 position:relative;
+                 z-index:99;<br>
+                 padding:10px;<br>
+             }<br>
+             .floating-label {<br>
+             position:absolute;<br>
+             z-index:999;<br>
+         }
+     </code>
+
+    </div>
+    <h3>(Adjust the padding as needed)</h3>
+</div>
+<form id="floaty">
+    <fieldset>
+        <input class="floating" type="name" placeholder="Name">
+        <input class="floating" type="email" placeholder="Email">
+        <input class="floating" type="text" placeholder="Address">
+        <textarea class="floating" placeholder="Your Issue"></textarea>
+    </fieldset>
+
+</form>
+<footer><h3><a href="https://github.com/Quadrophone/floating-labels/">Download it here</a></h3></footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="floating-labels.js"></script>
+
+
+
+</body>
+</html>
