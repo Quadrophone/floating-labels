@@ -2,7 +2,7 @@
     $(document).ready(function() {
         $('.floating').each(function() {
             var inputLabel = $(this).attr('placeholder');
-            $('<span class="floaty-label">' + inputLabel + '</span>').insertBefore($(this)).hide();
+            $('<span class="floating-label">' + inputLabel + '</span>').insertBefore($(this)).hide();
             var fontSize = parseInt($(this).css('font-size'));
             var inputHeight = parseInt($(this).css('padding-top'));
             var labelSize = inputHeight / 1.1;
