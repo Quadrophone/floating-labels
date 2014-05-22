@@ -10,7 +10,7 @@
             var inputPosition = $(this).position();
             var labelLeft = inputPosition.left + inputPadding;
             if ($(this).is('textarea')) {
-                var labelTop = inputPosition.top * 1.2;
+                var labelTop = inputPosition.top * 1.06
             } else {
                 var labelTop = inputPosition.top * 1.03;
             }
