@@ -58,6 +58,7 @@ body {
 
 h1 {
   margin: 1em auto;
+  text-align:center;
   color: #555;
   font-size: 2em; }
 
@@ -82,7 +83,7 @@ textarea {
 #floaty {
   background-color: #2C4D5E;
   border-radius: 3px;
-  width: 40%;
+  width: 80%;
   margin: 0 auto 2em;
   padding: 1em 0;
   min-width: 320px; }
